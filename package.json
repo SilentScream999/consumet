@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SilentScream999/consumet"
+    "url": "git@github.com:SilentScream999/consumet.git"
   },
   "author": "prince-ao <princead@tutanota.com>",
   "license": "MIT",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/SilentScream999/consumet#readme",
   "dependencies": {
-    "@consumet/extensions": "git+https://github.com/SilentScream999/consumet.git",
+    "@consumet/extensions": "git@github.com:SilentScream999/consumet.git",
     "@fastify/cors": "^8.2.0",
     "@types/fastify-cors": "^2.1.0",
     "@types/node": "^18.11.17",
