@@ -25,15 +25,11 @@ ENV REDIS_PORT=${REDIS_PORT}
 ENV REDIS_PASSWORD=${REDIS_PASSWORD}
 ENV NPM_CONFIG_LOGLEVEL=warn
 
-# Copy package files
+# Copy package files first
 COPY --chown=nodejs:nodejs package*.json ./
 
-# 🔹 Force Git to use HTTPS for all GitHub URLs
-RUN git config --global url."https://github.com/".insteadOf "ssh://git@github.com/"
-RUN git config --global url."https://github.com/".insteadOf "git@github.com:"
-RUN git config --global url."https://".insteadOf "git://"
-
-# Install dependencies
+# Install dependencies via SSH
+# Make sure SSH key is added in Render settings
 RUN npm install
 
 # Copy all source files
