@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/SilentScream999/consumet#readme",
   "dependencies": {
-    "@consumet/extensions": "git@github.com:SilentScream999/consumet.git",
+    "@consumet/extensions": "1.8.0",
     "@fastify/cors": "^8.2.0",
     "@types/fastify-cors": "^2.1.0",
     "@types/node": "^18.11.17",
