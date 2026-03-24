@@ -1,4 +1,6 @@
-import BOOKS from '@consumet/extensions';
+import * as Consumet from '@consumet/extensions';
+
+console.log('Consumet exports:', Consumet);
 import { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
 
 import libgen from './libgen';
